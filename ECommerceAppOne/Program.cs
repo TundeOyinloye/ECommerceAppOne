@@ -1,9 +1,15 @@
+using ECommerceAppOne.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//add DbContext file configuration and any other service before initializing the app var
+builder.Services.AddDbContext<AppDbContext>();
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

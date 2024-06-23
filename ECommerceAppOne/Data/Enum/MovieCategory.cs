@@ -1,4 +1,4 @@
-﻿namespace ECommerceAppOne.Data
+﻿namespace ECommerceAppOne.Data.Enum
 {
     public enum MovieCategory
 
@@ -8,6 +8,5 @@
         Drama,
         Horror,
         Documentary,
-
     }
 }
